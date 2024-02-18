@@ -1,0 +1,15 @@
+.navbar-container{
+    @apply flex py-[1.5rem] px-[0rem] flex-row justify-around items-center shadow-md 
+}
+
+.navbar-section-items{
+    @apply flex flex-row gap-[1.5rem] text-[1rem]  font-medium
+}
+
+.navbar-item-contact{
+    @apply bg-black py-[0.5rem] px-[1rem] rounded-md text-white font-semibold
+}
+
+.navbar-section-logo{
+    @apply text-[1.5rem] font-bold text-white 
+}

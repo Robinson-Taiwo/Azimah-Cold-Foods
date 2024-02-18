@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  
+  }
+  
+
+  .Hero-section{
+    @apply h-[100vh] bg-center bg-no-repeat w-[100vw] ;
+    background-image: url(../assets/images/rfm.jpg);
+    background-size: cover;
+    
+  }
+
+  .hero-section-overlay{
+    background: linear-gradient(#4cca6a, white);
+    @apply h-[100%] w-[100%] opacity-90
+  }
+
+  .hero-container{
+    @apply h-[85%] w-[100%]   flex  flex-row  px-[3rem]
+  }
+
+  .hero-section-content{
+    @apply pt-[10rem] gap-[1rem] flex flex-col h-fit 
+  }
+
+  .hero-content-heading{
+    @apply text-[2rem] font-extrabold leading-[1.25] tracking-[-.025em] text-white w-[95%]
+  }
+
+  .hero-content-subheading{
+    @apply text-[1.rem] font-medium w-[80%]
+  }
+
+.hero-cta{
+  @apply px-[1rem] py-[0.5rem] bg-[#5ac75a] w-[8rem] rounded-md font-bold text-white 
+}
+
+  .hero-section-image{
+  background-image: url(../assets/images/rf.jpg); 
+  @apply h-[70%] w-[80%] bg-cover bg-center bg-no-repeat rounded-[50%] items-center flex justify-center 
+  }
+
+  .hero-section-image-container{
+    @apply h-[100%] w-[100%] items-center flex justify-center relative
+  }
+
+  .img-content{
+    @apply h-[10rem] w-[10rem] bg-center bg-cover bg-no-repeat rounded-[50%] absolute top-[5rem] right-[-2rem] ; 
+    background-image: url(../assets/images/rcm.jpg);
+    
+  }
+
+  .img-content-two{
+    @apply h-[10rem] w-[10rem] bg-center bg-cover bg-no-repeat rounded-[50%] absolute top-[17rem] right-[-2rem] ; 
+    background-image: url(../assets/images/seafood.jpg);
+    
+  }
