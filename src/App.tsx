@@ -26,6 +26,7 @@ function App() {
   return (
     <div className="food" >
       {loading ? <Preloader /> : <Home />}
+      {/* <Home/> */}
 
     </div>
   )
