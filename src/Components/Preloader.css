@@ -1,0 +1,7 @@
+.preloader{
+    @apply bg-white h-[100vh] w-[100vw] flex items-center justify-center flex-col text-black
+ text-[1.5rem] font-medium}
+
+.frost{
+    @apply phone:h-[6rem] phone:w-[6rem]  desktop:w-[4rem] desktop:h-[4rem] animate-bounce
+}

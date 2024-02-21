@@ -1,15 +1,47 @@
 .navbar-container{
-    @apply flex py-[1.5rem] px-[0rem] flex-row justify-around items-center shadow-md 
+    @apply flex desktop:py-[1.5rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center shadow-md  justify-between bg-[#2893EA] phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] fixed top-[0] z-[1000] w-[100%]
 }
 
 .navbar-section-items{
-    @apply flex flex-row gap-[1.5rem] text-[1rem]  font-medium
+    @apply flex flex-row gap-[3rem] text-[1rem]  font-medium
 }
 
 .navbar-item-contact{
-    @apply bg-black py-[0.5rem] px-[1rem] rounded-md text-white font-semibold
+    @apply bg-[#5be2d9] py-[0.5rem] px-[1rem] rounded-md text-white font-normal hover:text-black hover:bg-[#2893EA] cursor-pointer
 }
 
 .navbar-section-logo{
-    @apply text-[1.5rem] font-bold text-white 
+    @apply desktop:text-[1.5rem] font-bold text-white phone:text-[1rem] 
+}
+
+/* .ham-menu{
+    @apply h-[100%] 
+} */
+
+.navbar-item{
+    @apply text-[0.9rem]  text-white items-center flex justify-center cursor-pointer flex-col  desktop:text-[1.02rem]
+}
+
+.navbar-section-links{
+    @apply desktop:flex flex-row desktop:justify-between gap-[7rem] phone:hidden 
+}
+
+.menu{
+    @apply h-[1rem] w-[1rem] desktop:hidden
+}
+
+
+
+.active {
+  }
+
+  .active-line {
+    height: 2px; 
+    width: 3rem;
+    background-color: #00ffee; /* Set the desired color for the line */
+    
+    width: 100%;
+}
+.bg-change{
+    @apply bg-[black]
 }

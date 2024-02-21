@@ -5,3 +5,25 @@ Registered with the Corporate Affairs Commission, Azimah Cold Food Store operate
 As an enterprise driven by ambition and a passion for customer satisfaction, Azimah Cold Food Store experiences consistent growth day by day. Their relentless pursuit of excellence positions them as formidable competitors in the market, continually striving to surpass rivals. Embracing growth opportunities, this dynamic business continues to forge ahead, captivating customers with their exceptional range and unwavering commitment to quality.
 
 Azimah Cold Food Store's success story is anchored in its ability to navigate the fiercely competitive business landscape while maintaining a steadfast focus on meeting customer demands. As they continue to expand their presence and reputation, Azimah Cold Food Store remains committed to redefining the frozen food industry in Kwara State, Nigeria.
+
+
+import { useRef } from "react";
+
+import gsap from "gsap"; // <-- import GSAP
+import { useGSAP } from "@gsap/react"; // <-- import the hook from our React package
+
+export default function App() {
+  const container = useRef();
+
+  useGSAP(() => {
+    // gsap code here...
+    gsap.to(".box", {rotation: 180}); // <-- automatically reverted
+
+  }, { scope: container }) // <-- scope for selector text (optional)
+
+ return (
+   <div ref={container} className="app">
+     <div className="box">Hello</div>
+   </div>
+ );
+}
