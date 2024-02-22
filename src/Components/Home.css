@@ -8,8 +8,13 @@
 
   .Hero-section{
     background-image: url(../assets/images/snow.jpg);
-   @apply h-[100vh] bg-center bg-cover bg-no-repeat relative mt-[5.38rem] phone:mt-[2rem] ;
+   @apply desktop:h-[100vh] bg-center bg-cover bg-no-repeat relative desktop:mt-[0rem] phone:mt-[0rem] phone:h-[70vh] ;
     
+  }
+
+
+  .home-container{
+    @apply flex flex-col 
   }
 
   .hero-section-overlay{
@@ -20,25 +25,25 @@
   /* bg-[#2893EA] */
   /* #4cca6a */
   .hero-container{
-    @apply px-[4.5rem]  h-[100%] w-[100%] flex flex-row 
+    @apply desktop:px-[4.5rem] phone:px-[1rem]   h-[100%] w-[100%] flex desktop:flex-row phone:flex-col
   }
 
   .hero-section-content{
-    @apply h-[100%] w-[70%] wide:gap-[1.5rem]  justify-center flex flex-col gap-[1rem]
+    @apply h-[100%] desktop:w-[70%] wide:gap-[1.5rem]  justify-center flex flex-col gap-[1rem] phone:w-[100%] tablet:w-[70%]
   }
 
   .hero-content-heading{
-    @apply text-[2.5rem] wide:text-[3rem] w-[100%] font-extrabold  text-[white]
+    @apply desktop:text-[2.5rem] wide:text-[3rem] w-[100%] font-extrabold  text-[white] phone:text-[1.7rem]
   
   }
 
 
   .hero-content-subheading{
- @apply w-[90%] text-[0.9rem] font-normal wide:text-[1.4rem] wide:w-[70%]
+ @apply w-[90%] phone:text-[0.7rem] desktop:text-[0.9rem] font-normal wide:text-[1.4rem] wide:w-[70%] tablet:w-[70%]
   }
 
 .hero-cta{
- @apply w-[10rem] text-[white] font-bold bg-[transparent] py-[0.8rem] px-[3rem]  ml-[1rem] bg-[#2893EA] bg-opacity-70 outline-double outline-[white] rounded-sm outline-4 ;
+ @apply desktop:w-[10rem] text-[white] font-bold bg-[transparent] desktop:py-[0.8rem] desktop:px-[3rem]  ml-[1rem] bg-[#2893EA] bg-opacity-70 outline-double outline-[white] rounded-sm outline-4 phone:py-[0.7rem] phone:px-[0rem] phone:w-[7.5rem] ;
  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -56,8 +61,8 @@
  }
 
 
- .blur-blue{
- 
+ .navbar{
+  @apply  top-[0] z-[1000] w-[100%] 
  }
 
 
@@ -67,7 +72,7 @@
   } */
 
   .hero-section-image-container{
-   @apply flex items-center justify-center relative gap-[0rem] flex-col  w-[70%] h-[100%]
+   @apply desktop:flex items-center justify-center relative gap-[0rem] flex-col  w-[70%] h-[100%] phone:hidden 
   }
 /* 
   .hero-section-image-container{
@@ -92,7 +97,7 @@
 
   .categories-section{
     background: linear-gradient(180deg, hsla(207, 96%, 71%, 1) 0%, hsla(0, 0%, 100%, 1) 22%);
-    @apply w-[100vw] h-fit flex items-center  flex-col px-[3rem] relative  pt-[10rem] mb-[9rem] wide:px-[4rem]
+    @apply w-[100vw] h-fit flex items-center  flex-col desktop:px-[3rem] phone:px-[1rem] relative phone:pt-[3rem]  desktop:pt-[10rem] mb-[9rem] wide:px-[4rem]
   }
 
   .frozen-food-categories{
@@ -103,31 +108,40 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
-    @apply text-[2.5rem] wide:text-[4rem] font-extrabold  text-[#2893EA]
+    @apply desktop:text-[2.5rem] wide:text-[4rem] font-extrabold  text-[#2893EA] phone:text-[1.8rem] phone:text-center 
   }
 
 .wm-image{
-  @apply h-[10rem] w-[10rem]  absolute opacity-25 right-[2.5rem] rotate-45 top-[4rem]
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-25 right-[2.5rem] rotate-45 top-[4rem] phone:h-[5rem] phone:w-[5rem]
 }
 
 .wm-image2{
-  @apply h-[10rem] w-[10rem]  absolute opacity-25 left-[3rem] rotate-12 top-[10rem] 
+  @apply desktop:h-[10rem] desktop:w-[10rem]  absolute opacity-25 desktop:left-[3rem] rotate-12 desktop:top-[10rem] phone:h-[5rem] phone:w-[5rem] phone:top-[13rem] phone:left-[2rem]
 }
 
+
+
+
+
 .wm-image3{
-  @apply h-[10rem] w-[10rem]  absolute opacity-25 left-[40rem] rotate-12 top-[32rem] wide:top-[42rem] wide:left-[49rem] phone:hidden
+  @apply h-[10rem] w-[10rem]  absolute opacity-25 left-[40rem] rotate-12 top-[32rem] wide:top-[42rem] wide:left-[49rem] phone:hidden phone:h-[5rem] phone:w-[5rem]
 }
 
   .cs-subheading{
-    @apply text-center wide:text-[1.5rem] w-[60%] font-normal mt-[1rem] mb-[4rem] text-[0.9rem]
+    @apply text-center wide:text-[1.5rem] desktop:w-[60%] font-normal mt-[1rem] mb-[4rem] text-[0.9rem] phone:w-[100%] tablet:w-[80%]
   }
 
   .ff-category{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    @apply flex items-center flex-col justify-center gap-[1rem] py-[2rem] px-[3rem] rounded-md font-bold text-[#2893EA] text-[1.2rem] hover:bg-[#6ab0e9] hover:text-white z-[1000] relative wide:py-[3rem] wide:px-[4rem]
+    @apply flex items-center flex-col justify-center desktop:gap-[1rem] desktop:py-[2rem] desktop:px-[3rem] rounded-md font-bold text-[#2893EA] text-[1.2rem] hover:bg-[#6ab0e9] hover:text-white z-[100] relative wide:py-[3rem] wide:px-[4rem] hover:scale-110 transition-all phone:px-[2rem] phone:py-[1.5rem] phone:gap-[0.5rem] 
   }
  
   .ff-category p{
     @apply text-[0.8rem] wide:text-[1.02rem] text-black font-normal text-center w-[9rem]; 
   }
 
+
+
+  .about-section{
+    @apply flex flex-col desktop:flex-row px-[]
+  }

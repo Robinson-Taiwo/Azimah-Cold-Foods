@@ -1,9 +1,13 @@
 .navbar-container{
-    @apply flex desktop:py-[1.5rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center shadow-md  justify-between bg-[#2893EA] phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] fixed top-[0] z-[1000] w-[100%]
+    @apply flex desktop:py-[1.5rem] phone:py-[1rem]  desktop:px-[4rem] flex-row  items-center shadow-md  justify-between bg-[#2893EA] phone:px-[0.5rem] phone:w-[100vw]  desktop:w-[100vw] 
 }
 
 .navbar-section-items{
     @apply flex flex-row gap-[3rem] text-[1rem]  font-medium
+}
+
+.isScrolled{
+    @apply fixed bg-opacity-55
 }
 
 .navbar-item-contact{

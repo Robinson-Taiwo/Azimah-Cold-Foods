@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
 import Navbar from './Navbar';
 import chicken from '../assets/icons/chicken.svg';
@@ -10,16 +10,17 @@ import fs from '../assets/images/fs.png';
 import tfm from '../assets/images/tfm.png';
 import appetite from '../assets/images/appetite.png';
 
-
-
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import ScrollTo from "gsap/ScrollToPlugin"
 
 
+
 interface HomeProps { }
 
 const Home: React.FC<HomeProps> = () => {
+
+    //  handling the navigation scrolling with gsap
     const sectionTargets = useRef<Record<string, HTMLElement>>({});
 
     useEffect(() => {
@@ -29,24 +30,7 @@ const Home: React.FC<HomeProps> = () => {
         gsap.registerPlugin(ScrollToPlugin); // Register ScrollToPlugin
     }, []);
 
-    // const handleScrollToSection = (sectionId: string) => {
-    //     const targetSection = sectionTargets.current[sectionId];
-    //     if (targetSection) {
-    //         gsap.to(window, {
-    //             scrollTo: {
-    //               y: targetSection?.offsetTop,
-    //               scrollTo: {
-    //                 duration: 1,
-    //                 ease: 'power2.out',
-    //                 behavior: 'smooth',
-    //               },
-    //             },
-    //           });
-    //     }
-    // };
-
     const section1Ref = useRef<HTMLDivElement>(null); // Assuming section1 is a div
-
 
     const handleScrollToSection = (sectionId: string) => {
         const targetSection = document.getElementById(sectionId);
@@ -55,13 +39,19 @@ const Home: React.FC<HomeProps> = () => {
         }
     };
 
+   
+
+
+
 
     return (
-        <div>
+        <div className='home-container'>
             <div className="navbar">
 
                 <Navbar handleScrollToSection={handleScrollToSection} />
             </div>
+
+
 
             <section className="Hero-section">
 
@@ -96,8 +86,6 @@ const Home: React.FC<HomeProps> = () => {
 
 
                     </div>
-
-
 
 
 

@@ -16,7 +16,6 @@ function App() {
 
     // Attach the event listener for page load
     window.addEventListener('load', handleLoad);
-
     // Cleanup the event listener when the component is unmounted
     return () => {
       window.removeEventListener('load', handleLoad);
